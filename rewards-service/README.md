@@ -12,11 +12,11 @@ This is the source code for [Spring Boot + Spring Data JPA example](https://mkyo
 
 ## How to run it
 ```
-$ git clone https://github.com/mkyong/spring-boot.git
+$ git clone https://github.com/tapaskp/rewards.git
 
-$ cd spring-data-jpa
+$ cd rewards-service
 
 $ ./mvnw spring-boot:run
 ```
-
-
+## EndPoint
+http://localhost:8080/api/rewards/1/3/total
