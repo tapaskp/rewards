@@ -1,6 +1,6 @@
-# Spring Boot + Spring Data JPA example
+# Reward Service for Charter
 
-This is the source code for [Spring Boot + Spring Data JPA example](https://mkyong.com/spring-boot/spring-boot-spring-data-jpa/)
+
 
 ## Technologies used:
 * Spring Boot 3.1.2
