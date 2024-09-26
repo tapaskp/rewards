@@ -18,7 +18,7 @@ public class RewardController {
 	private RewardService rewardService;
 
 	@GetMapping("/{customerId}/{monthAgo}/total")
-	public int getRewardsNMonthsAgo(@PathVariable Long customerId, @PathVariable Long monthAgo) {
+	public int getRewardsNMonthsAgo(@PathVariable Long customerId, @PathVariable Integer monthAgo) {
 		return rewardService.getRewardsNMonthsAgo(customerId, monthAgo);
 	}
 }
