@@ -2,8 +2,6 @@ package com.infy.rewards.service;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,6 +9,7 @@ import org.springframework.stereotype.Service;
 import com.infy.rewards.entity.Transaction;
 import com.infy.rewards.exception.UserNotFoundException;
 import com.infy.rewards.repository.TransactionRepository;
+import com.infy.rewards.util.RewardConstant;
 
 @Service
 public class RewardService {
@@ -23,7 +22,7 @@ public class RewardService {
 		List<Transaction> transactions = transactionRepository.findByCustomerIdAndDateBetween(customerId,
 				threeMonthsAgo, now);
 		if (transactions.isEmpty()) {
-			throw new UserNotFoundException("User does not exist");
+			throw new UserNotFoundException(RewardConstant.USER_NOT_FOUND);
 		}
 		return transactions.stream().mapToInt(this::calculatePoints).sum();
 	}
