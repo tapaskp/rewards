@@ -17,7 +17,7 @@ public class RewardService {
 	@Autowired
 	TransactionRepository transactionRepository;
 
-	public int getRewardsNMonthsAgo(Long customerId, Long monthAgo) {
+	public int getRewardsNMonthsAgo(Long customerId, Integer monthAgo) {
 		LocalDate now = LocalDate.now();
 		LocalDate threeMonthsAgo = now.minusMonths(monthAgo);
 		List<Transaction> transactions = transactionRepository.findByCustomerIdAndDateBetween(customerId,

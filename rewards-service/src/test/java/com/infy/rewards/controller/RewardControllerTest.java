@@ -32,7 +32,7 @@ public class RewardControllerTest {
 	@Test
 	void getRewardsNMonthsAgo() throws Exception {
 
-		Mockito.when(rewardService.getRewardsNMonthsAgo(Mockito.anyLong(), Mockito.anyLong())).thenReturn(365);
+		Mockito.when(rewardService.getRewardsNMonthsAgo(Mockito.anyLong(), Mockito.anyInt())).thenReturn(365);
 
 		RequestBuilder requestBuilder = MockMvcRequestBuilders.get("/api/rewards/1/3/total")
 				.accept(MediaType.APPLICATION_JSON);

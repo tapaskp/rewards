@@ -56,7 +56,7 @@ public class RewardServiceTest {
 		transactions.add(transaction3);
 		Mockito.when(transactionRepository.findByCustomerIdAndDateBetween(1L, threeMonthsAgo, now))
 				.thenReturn(transactions);
-		int totalRewards = rewardService.getRewardsNMonthsAgo(1L, 3L);
+		int totalRewards = rewardService.getRewardsNMonthsAgo(1L, 3);
 		assertEquals(365, totalRewards);
 	}
 }

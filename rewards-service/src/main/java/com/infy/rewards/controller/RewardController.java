@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.infy.rewards.service.RewardService;
+import com.infy.rewards.service.RewardService; 
 
 @RestController
 @RequestMapping("/api/rewards")
