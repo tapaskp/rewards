@@ -22,9 +22,9 @@ public class UserResponseEntityExceptionHandler extends ResponseEntityExceptionH
 
 	@ExceptionHandler(UserNotFoundException.class)
 	public final ResponseEntity<ExceptionResponse> handleUserNotFoundException(
-			UserNotFoundException studentNotFoundException, WebRequest request) {
+			UserNotFoundException userNotFoundException, WebRequest request) {
 		ExceptionResponse exceptionResponse = new ExceptionResponse(LocalDateTime.now(),
-				studentNotFoundException.getMessage(), request.getDescription(false));
+				userNotFoundException.getMessage(), request.getDescription(false));
 
 		return new ResponseEntity<>(exceptionResponse, HttpStatus.NOT_FOUND);
 	}
