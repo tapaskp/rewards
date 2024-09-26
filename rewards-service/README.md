@@ -36,4 +36,5 @@ Once the application is run,open url http://localhost:8080/h2-console
 Insert the data shared in data.sql file under resource directory
 Note::userName =sa ,password =password
 ## EndPoint
+Open Postman and put below url
 http://localhost:8080/api/rewards/1/3/total
