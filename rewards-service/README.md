@@ -36,7 +36,6 @@ $ Right click on project Run As -> Spring boot app
 	Insert the data shared in data.sql file under resource directory
 	Note::userName =sa ,password =password
 ## EndPoint
-<<<<<<< HEAD
 	Open Postman and put below url
 	http://localhost:8080/api/rewards/1/3/total
 
@@ -56,7 +55,3 @@ $ Right click on project Run As -> Spring boot app
 	Authentication/Authorization
 	User Input Validation
 	
-=======
-Open Postman and put below url
-http://localhost:8080/api/rewards/1/3/total
->>>>>>> 8eeb0c4804e5988941dec1d807865275456ab132
