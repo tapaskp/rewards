@@ -19,6 +19,17 @@ $ cd rewards-service (Where pom.xml is present)
 $ run mvn clean package
 
 $ ./mvnw spring-boot:run
+
+			## OR run via eclipse/STS
+			
+
+$ import the project into STS
+
+$ Right click on project Run As -> Maven clean
+
+$ Right click on project Run As -> Maven install
+
+$ Right click on project Run As -> Spring boot app
 `````
 ## Database 
 Once the application is run,open url http://localhost:8080/h2-console
