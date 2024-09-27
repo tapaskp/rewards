@@ -26,7 +26,7 @@ public class TestUtil {
 		transaction3.setCustomerId(1L);
 		transaction3.setAmount(200D);
 		transaction3.setDate(LocalDate.of(2024, 9, 5));
-		
+
 		transactions.add(transaction1);
 		transactions.add(transaction2);
 		transactions.add(transaction3);
