@@ -1,4 +1,4 @@
-# Reward Service for Charter
+# Reward Service
 
 
 
